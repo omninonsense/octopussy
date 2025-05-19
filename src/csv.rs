@@ -5,7 +5,7 @@ use tracing::{error, info};
 use crate::transaction::{ClientId, TransactionEvent, TransactionId, TransactionProcessor};
 
 /// Maximum decimal places to include when formatting the CSV
-const DECIMAL_PLACES: u32 = 5;
+const DECIMAL_PLACES: u32 = 4;
 
 #[derive(Debug, Deserialize)]
 pub struct TransactionRow {
