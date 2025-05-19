@@ -72,8 +72,9 @@ For a production environment it would make more sense to store it in a database 
 just conserving memory!).
 
 If the processor was bundled in a server, and the event came from the network it should continue to
-work fine. It would need a bit of refactoring though, and would benefit from being made async too. And
-again since everything is stored in memory, a large number of those transactions could become an issue.
+work fine. It would need a bit of refactoring though, and parts of the code would benefit from being
+made async too. And again since everything is stored in memory, a large amount of transactions could
+become an issue
 
 ## Maintainability
 
