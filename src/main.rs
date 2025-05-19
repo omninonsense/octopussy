@@ -19,7 +19,7 @@ fn main() -> anyhow::Result<()> {
     };
 
     info!("Opening file file: {}", file_path);
-    let file = File::open(file_path).context(format!("failed to open ${file_path}"))?;
+    let file = File::open(file_path).context(format!("failed to open {file_path}"))?;
 
     let csv_reader = csv::ReaderBuilder::default()
         .has_headers(true)
